@@ -1,0 +1,207 @@
+:root {
+    --qirmizi: #fd634d;
+    --yasil: #a1c927;
+}
+header{
+    background: url('../img/headerbg.jpg') 60% 50%/cover;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+nav, #title{
+    position: absolute;
+    width: 100%;
+}
+menu li a{
+    font: .8em 'Avenir Next Rounded', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+nav{
+    padding: 0 50px;
+    top: 40px;
+}
+#title{ bottom: 16vh;}
+h1,h5{
+    font-family: 'Myriad Pro';
+    text-transform: uppercase;
+    color: #fff;
+}
+h1{ font-size:2em }
+h2{
+    font: 2em 'Open Sans';
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+h3{
+    font: 1.2em 'Open Sans';
+}
+h4{
+    font: 300  1.8em Montserrat;
+    color: white;
+}
+h5{
+    font-size: 1em;
+    letter-spacing: 3px;
+}
+h6{
+    font: .9em Montserrat;
+    text-transform: uppercase;
+}
+#art{
+    padding: 35px 10px ;
+}
+article{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+p{
+    font: 1em 'Open Sans';
+}
+.bgyasil { background-color: var(--yasil); }
+.bgqirmizi { background-color: var(--qirmizi); }
+.bgag { background-color: #fff; }
+.txtyasil { color: var(--yasil); }
+.txtqirmizi { color: var(--qirmizi); }
+.txtag { color: #fff; }
+.center { text-align: center;} 
+.height50 { min-height: 50vh; }
+.artpadding { padding: 54px 38px;}
+
+#art article i { font-size: 2.8em;}
+#fitnessfirst { background: url('../img/fitnessfirst.jpg') center/cover }
+#yourbody { background: url('../img/yourbody.jpg') center/cover }
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover }
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover }
+#grape { background: url('../img/grape.jpg') center/cover }
+#mango { background: url('../img/mango.jpg') center/cover }
+
+.fa-droplet{
+    color: #c6c6c6;
+    padding-bottom: 20px ;
+}
+.leaders{
+    background: url('../img/leaderbg.jpg') center/cover;
+    height: 100vh;
+    padding: 250px 10px;
+    text-align: center;
+}
+.leaders p{
+    color: white;
+    font-size: .8em;
+    text-align: center;
+}
+.leaders h4{
+    font: bold 1.8em 'Open Sans';
+    text-align: center;
+}
+footer{
+    background-color: #0C1119;
+    padding: 80px 10%;
+}
+footer i{
+    border-radius: 50%;
+    padding: 15px 15px;
+    color: white;
+    font-size: .6em;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.fa-facebook-f{ 
+    background-color: #2E3092;
+    padding: 15px 17px;
+}
+.fa-twitter { background-color: #00ADEF;}
+.fa-youtube{ background-color: #ED3123;}
+.fa-linkedin-in{ background-color: #16198F;}
+.icons{ 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.footer h5{
+    white-space: nowrap;
+    padding: 20px 0;
+}
+.footer p{
+    color: rgb(163, 163, 163);
+    font-size: .8em;
+    text-align: left;
+}
+form{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+#join{
+    background-color: #A1C927;
+    padding: 9px 30px;
+}
+@media only screen and (min-width: 768px) {
+    .container { 
+        max-width: 80%;
+        margin: auto;
+    }
+    header{text-align: initial;}
+    h1 { font-size: 2.5em; }
+    h5 { padding: 0 20px 0 0 ;}
+    menu { 
+        float: right; 
+        padding: 10px 0;
+    }
+    menu li { 
+        display: inline-block;
+        padding: 0 2vw;
+    }
+    #title {
+        left: 115px;
+        width: initial;
+        text-align: right;
+    }
+    .row::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .fleft { float: left }
+    .fright { float: right }
+    .col25 { width: 25% }
+    .col33 { width: 33.33% }
+    .col66 { width: 66.66% }
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: left;
+        gap: 10px;
+        padding: 70px 10px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+    .footer div{
+        width: 33%;
+    }
+    form{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 10px;
+    }
+
+}
